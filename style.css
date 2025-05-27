@@ -5,70 +5,94 @@
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    padding: 30px;
 }
 
 /* Cabeçalho */
 .cabecalho {
     text-align: center;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
+    padding: 40px;
+    background: linear-gradient(145deg, #1f4068, #283e51);
+    border: 4px solid #00d4ff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #00d4ff88;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Imagem de perfil */
+.cabecalho:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px #00d4ffcc;
+}
+
+/* Avatar */
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
+    border: 4px solid #00d4ff;
     object-fit: cover;
-    margin-bottom: 15px;
+    box-shadow: 0 0 20px #00d4ff99;
+    margin-bottom: 20px;
 }
 
-/* Parágrafo de descrição */
+/* Descrição */
 .descricao {
     font-size: 1.1em;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    color: #f2f2f2;
 }
 
 /* Seção de interesses */
 .interesses {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    max-width: 600px;
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 20px;
+    border: 4px dashed #e94560;
+    box-shadow: 0 0 20px #e94560aa;
+    max-width: 700px;
     margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.interesses:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px #e94560dd;
 }
 
 .interesses h2 {
     text-align: center;
-    margin-bottom: 15px;
-    color: #444;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffb347;
 }
 
 .interesses ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
 }
 
 .interesses li {
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
+    background-color: #e94560;
+    padding: 12px 20px;
+    border-radius: 10px;
     font-weight: bold;
+    color: white;
+    font-size: 1.1em;
+    box-shadow: 0 0 10px #e94560aa;
+    transition: transform 0.2s;
 }
 
+.interesses li:hover {
+    transform: scale(1.1);
+    background-color: #ff6f91;
+}
